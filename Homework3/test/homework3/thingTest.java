@@ -50,4 +50,32 @@ public class thingTest {
         assertEquals(expResult, result);
     }
     
+    @Test
+    public void testCompareTo2() {
+        System.out.println("compareTo");
+        thing o = new thing("freddie", 0);
+        thing instance = new thing("gerald", 0);
+        int expResult = 0;
+        int result = instance.compareTo(o);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testCompareTo3() {
+        System.out.println("compareTo");
+        thing o = new thing(" ", 92);
+        thing instance = new thing("", 15);
+        int expResult = -1;
+        int result = instance.compareTo(o);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testCompareTo4() {
+        System.out.println("compareTo");
+        Integer o = new Integer(7);
+        thing instance = new thing("gerald", 64);
+        int result = instance.compareTo(o);
+        assertTrue(result < 0);
+    }
 }

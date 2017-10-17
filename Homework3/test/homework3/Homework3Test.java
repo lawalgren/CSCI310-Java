@@ -82,6 +82,7 @@ public class Homework3Test {
         regular.add(new thing("richard", 2));
         regular.add(new thing("angela", 19524));
         regular.add(new thing("harold", 4));
+        
         instance.doStuff(backwards,regular);
         
         assertEquals(backwards.first(), new thing("harold", 55));

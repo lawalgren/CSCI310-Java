@@ -48,19 +48,14 @@ public class Homework3 {
         regular.add(new thing("harold", 4));
         
         doStuff(backwards, regular);
-        outputThings(backwards, regular);
+        for (thing item : backwards)
+            System.out.println("Backwards:\nname: " + item.name + "\tboxes: " + item.boxes + "\n");
+        for (thing item : regular)
+            System.out.println("Unsorted:\nname: " + item.name + "\tboxes: " + item.boxes + "\n");
     }
 
     public void doStuff(TreeSet<thing> backwards, TreeSet<thing> regular) {
         backwards.remove(backwards.first());
         regular.remove(regular.first());
     }
-
-    public void outputThings(TreeSet<thing> backwards, TreeSet<thing> regular) {
-         for (thing item : backwards)
-            System.out.println("Backwards:\nname: " + item.name + "\tboxes: " + item.boxes);
-        for (thing item : regular)
-            System.out.println("Unsorted:\nname: " + item.name + "\tboxes: " + item.boxes);
-    }
-    
 }
