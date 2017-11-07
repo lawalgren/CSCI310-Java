@@ -6,3 +6,5 @@ Homework for CSCI 310
 9.21.2017: Write Java program to solve some Kattis problem and test it. Upload to GitHub. https://github.com/lawalgren/CSCI310-Java/tree/Homework2/Homework2. Solution to this Kattis problem: https://open.kattis.com/problems/apaxiaaans
 
 10.12.2017: Write program and tests to demonstrate knowledge of collections. https://github.com/lawalgren/CSCI310-Java/tree/Homework3/Homework3
+
+10.31.2017: Write program and tests to demonstrate knowledge of databases. https://github.com/lawalgren/CSCI310-Java/tree/Homework4/Homework4
