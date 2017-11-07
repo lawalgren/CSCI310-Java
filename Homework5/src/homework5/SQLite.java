@@ -27,9 +27,9 @@ public class SQLite {
     private Connection connection = null;
     public static final int SQL_TIMEOUT_SECONDS = 10;
 
-    public SQLite(String db) {
+    public SQLite() {
         try {
-           connection = DriverManager.getConnection("jdbc:sqlite:" + db);
+           connection = DriverManager.getConnection("jdbc:sqlite:sample.db");
         } catch (SQLException ex) {
             Logger.getLogger(SQLite.class.getName()).log(Level.SEVERE, null, ex);
         }
